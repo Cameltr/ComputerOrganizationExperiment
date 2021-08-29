@@ -1,0 +1,14 @@
+Fitter Status : Successful - Mon Nov 16 20:13:22 2020
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : REG
+Top-level Entity Name : REG
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Preliminary
+Total logic elements : 68 / 18,752 ( < 1 % )
+Total registers : 64
+Total pins : 43 / 142 ( 30 % )
+Total virtual pins : 0
+Total memory bits : 256 / 239,616 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,927 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--D2_q_output[15] is regfile:inst|register_16:Areg01|q_output[15] at LCFF_X38_Y12_N1
+D2_q_output[15] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[15],  ,  , VCC);
+
+
+--D3_q_output[15] is regfile:inst|register_16:Areg02|q_output[15] at LCFF_X43_Y12_N21
+D3_q_output[15] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[15],  ,  , VCC);
+
+
+--D1_q_output[15] is regfile:inst|register_16:Areg00|q_output[15] at LCFF_X43_Y12_N1
+D1_q_output[15] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[15],  ,  , VCC);
+
+
+--F1L31 is regfile:inst|mux4_to_1:mux1|out_put[15]~216 at LCCOMB_X43_Y12_N20
+F1L31 = Reg_wri_aa[0] & (Reg_wri_aa[1]) # !Reg_wri_aa[0] & (Reg_wri_aa[1] & (D3_q_output[15]) # !Reg_wri_aa[1] & D1_q_output[15]);
+
+
+--D4_q_output[15] is regfile:inst|register_16:Areg03|q_output[15] at LCFF_X38_Y12_N31
+D4_q_output[15] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[15],  ,  , VCC);
+
+
+--F1L32 is regfile:inst|mux4_to_1:mux1|out_put[15]~217 at LCCOMB_X38_Y12_N0
+F1L32 = F1L31 & (D4_q_output[15] # !Reg_wri_aa[0]) # !F1L31 & (D2_q_output[15] & Reg_wri_aa[0]);
+
+
+--D3_q_output[14] is regfile:inst|register_16:Areg02|q_output[14] at LCFF_X39_Y12_N29
+D3_q_output[14] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[14],  ,  , VCC);
+
+
+--D2_q_output[14] is regfile:inst|register_16:Areg01|q_output[14] at LCFF_X38_Y12_N23
+D2_q_output[14] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[14],  ,  , VCC);
+
+
+--D1_q_output[14] is regfile:inst|register_16:Areg00|q_output[14] at LCFF_X39_Y12_N21
+D1_q_output[14] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[14],  ,  , VCC);
+
+
+--F1L29 is regfile:inst|mux4_to_1:mux1|out_put[14]~218 at LCCOMB_X38_Y12_N22
+F1L29 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[14]) # !Reg_wri_aa[0] & D1_q_output[14]);
+
+
+--D4_q_output[14] is regfile:inst|register_16:Areg03|q_output[14] at LCFF_X38_Y12_N29
+D4_q_output[14] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[14],  ,  , VCC);
+
+
+--F1L30 is regfile:inst|mux4_to_1:mux1|out_put[14]~219 at LCCOMB_X39_Y12_N28
+F1L30 = F1L29 & (D4_q_output[14] # !Reg_wri_aa[1]) # !F1L29 & (D3_q_output[14] & Reg_wri_aa[1]);
+
+
+--D2_q_output[13] is regfile:inst|register_16:Areg01|q_output[13] at LCFF_X42_Y12_N11
+D2_q_output[13] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[13],  ,  , VCC);
+
+
+--D3_q_output[13] is regfile:inst|register_16:Areg02|q_output[13] at LCFF_X43_Y12_N7
+D3_q_output[13] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[13],  ,  , VCC);
+
+
+--D1_q_output[13] is regfile:inst|register_16:Areg00|q_output[13] at LCFF_X43_Y12_N19
+D1_q_output[13] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[13],  ,  , VCC);
+
+
+--F1L27 is regfile:inst|mux4_to_1:mux1|out_put[13]~220 at LCCOMB_X43_Y12_N6
+F1L27 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[13] # !Reg_wri_aa[1] & (D1_q_output[13]));
+
+
+--D4_q_output[13] is regfile:inst|register_16:Areg03|q_output[13] at LCFF_X40_Y12_N11
+D4_q_output[13] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[13],  ,  , VCC);
+
+
+--F1L28 is regfile:inst|mux4_to_1:mux1|out_put[13]~221 at LCCOMB_X42_Y12_N10
+F1L28 = Reg_wri_aa[0] & (F1L27 & D4_q_output[13] # !F1L27 & (D2_q_output[13])) # !Reg_wri_aa[0] & (F1L27);
+
+
+--D3_q_output[12] is regfile:inst|register_16:Areg02|q_output[12] at LCFF_X39_Y12_N23
+D3_q_output[12] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[12],  ,  , VCC);
+
+
+--D2_q_output[12] is regfile:inst|register_16:Areg01|q_output[12] at LCFF_X38_Y12_N3
+D2_q_output[12] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[12],  ,  , VCC);
+
+
+--D1_q_output[12] is regfile:inst|register_16:Areg00|q_output[12] at LCFF_X39_Y12_N17
+D1_q_output[12] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[12],  ,  , VCC);
+
+
+--F1L25 is regfile:inst|mux4_to_1:mux1|out_put[12]~222 at LCCOMB_X38_Y12_N2
+F1L25 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[12]) # !Reg_wri_aa[0] & D1_q_output[12]);
+
+
+--D4_q_output[12] is regfile:inst|register_16:Areg03|q_output[12] at LCFF_X38_Y12_N13
+D4_q_output[12] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[12],  ,  , VCC);
+
+
+--F1L26 is regfile:inst|mux4_to_1:mux1|out_put[12]~223 at LCCOMB_X39_Y12_N22
+F1L26 = Reg_wri_aa[1] & (F1L25 & (D4_q_output[12]) # !F1L25 & D3_q_output[12]) # !Reg_wri_aa[1] & F1L25;
+
+
+--D2_q_output[11] is regfile:inst|register_16:Areg01|q_output[11] at LCFF_X42_Y12_N15
+D2_q_output[11] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[11],  ,  , VCC);
+
+
+--D3_q_output[11] is regfile:inst|register_16:Areg02|q_output[11] at LCFF_X43_Y12_N25
+D3_q_output[11] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[11],  ,  , VCC);
+
+
+--D1_q_output[11] is regfile:inst|register_16:Areg00|q_output[11] at LCFF_X43_Y12_N3
+D1_q_output[11] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[11],  ,  , VCC);
+
+
+--F1L23 is regfile:inst|mux4_to_1:mux1|out_put[11]~224 at LCCOMB_X43_Y12_N24
+F1L23 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[11] # !Reg_wri_aa[1] & (D1_q_output[11]));
+
+
+--D4_q_output[11] is regfile:inst|register_16:Areg03|q_output[11] at LCFF_X40_Y12_N25
+D4_q_output[11] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[11],  ,  , VCC);
+
+
+--F1L24 is regfile:inst|mux4_to_1:mux1|out_put[11]~225 at LCCOMB_X42_Y12_N14
+F1L24 = Reg_wri_aa[0] & (F1L23 & (D4_q_output[11]) # !F1L23 & D2_q_output[11]) # !Reg_wri_aa[0] & F1L23;
+
+
+--D3_q_output[10] is regfile:inst|register_16:Areg02|q_output[10] at LCFF_X39_Y12_N19
+D3_q_output[10] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[10],  ,  , VCC);
+
+
+--D2_q_output[10] is regfile:inst|register_16:Areg01|q_output[10] at LCFF_X38_Y12_N11
+D2_q_output[10] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[10],  ,  , VCC);
+
+
+--D1_q_output[10] is regfile:inst|register_16:Areg00|q_output[10] at LCFF_X39_Y12_N25
+D1_q_output[10] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[10],  ,  , VCC);
+
+
+--F1L21 is regfile:inst|mux4_to_1:mux1|out_put[10]~226 at LCCOMB_X38_Y12_N10
+F1L21 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[10]) # !Reg_wri_aa[0] & D1_q_output[10]);
+
+
+--D4_q_output[10] is regfile:inst|register_16:Areg03|q_output[10] at LCFF_X38_Y12_N7
+D4_q_output[10] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[10],  ,  , VCC);
+
+
+--F1L22 is regfile:inst|mux4_to_1:mux1|out_put[10]~227 at LCCOMB_X39_Y12_N18
+F1L22 = Reg_wri_aa[1] & (F1L21 & D4_q_output[10] # !F1L21 & (D3_q_output[10])) # !Reg_wri_aa[1] & (F1L21);
+
+
+--D2_q_output[9] is regfile:inst|register_16:Areg01|q_output[9] at LCFF_X42_Y12_N19
+D2_q_output[9] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[9],  ,  , VCC);
+
+
+--D3_q_output[9] is regfile:inst|register_16:Areg02|q_output[9] at LCFF_X43_Y12_N29
+D3_q_output[9] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[9],  ,  , VCC);
+
+
+--D1_q_output[9] is regfile:inst|register_16:Areg00|q_output[9] at LCFF_X43_Y12_N5
+D1_q_output[9] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[9],  ,  , VCC);
+
+
+--F1L19 is regfile:inst|mux4_to_1:mux1|out_put[9]~228 at LCCOMB_X43_Y12_N28
+F1L19 = Reg_wri_aa[0] & (Reg_wri_aa[1]) # !Reg_wri_aa[0] & (Reg_wri_aa[1] & (D3_q_output[9]) # !Reg_wri_aa[1] & D1_q_output[9]);
+
+
+--D4_q_output[9] is regfile:inst|register_16:Areg03|q_output[9] at LCFF_X40_Y12_N5
+D4_q_output[9] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[9],  ,  , VCC);
+
+
+--F1L20 is regfile:inst|mux4_to_1:mux1|out_put[9]~229 at LCCOMB_X42_Y12_N18
+F1L20 = Reg_wri_aa[0] & (F1L19 & (D4_q_output[9]) # !F1L19 & D2_q_output[9]) # !Reg_wri_aa[0] & F1L19;
+
+
+--D3_q_output[8] is regfile:inst|register_16:Areg02|q_output[8] at LCFF_X39_Y12_N9
+D3_q_output[8] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[8],  ,  , VCC);
+
+
+--D2_q_output[8] is regfile:inst|register_16:Areg01|q_output[8] at LCFF_X38_Y12_N19
+D2_q_output[8] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[8],  ,  , VCC);
+
+
+--D1_q_output[8] is regfile:inst|register_16:Areg00|q_output[8] at LCFF_X39_Y12_N27
+D1_q_output[8] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[8],  ,  , VCC);
+
+
+--F1L17 is regfile:inst|mux4_to_1:mux1|out_put[8]~230 at LCCOMB_X38_Y12_N18
+F1L17 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[8]) # !Reg_wri_aa[0] & D1_q_output[8]);
+
+
+--D4_q_output[8] is regfile:inst|register_16:Areg03|q_output[8] at LCFF_X40_Y12_N17
+D4_q_output[8] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[8],  ,  , VCC);
+
+
+--F1L18 is regfile:inst|mux4_to_1:mux1|out_put[8]~231 at LCCOMB_X39_Y12_N8
+F1L18 = Reg_wri_aa[1] & (F1L17 & (D4_q_output[8]) # !F1L17 & D3_q_output[8]) # !Reg_wri_aa[1] & F1L17;
+
+
+--D2_q_output[7] is regfile:inst|register_16:Areg01|q_output[7] at LCFF_X42_Y12_N9
+D2_q_output[7] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[7],  ,  , VCC);
+
+
+--D3_q_output[7] is regfile:inst|register_16:Areg02|q_output[7] at LCFF_X43_Y12_N17
+D3_q_output[7] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[7],  ,  , VCC);
+
+
+--D1_q_output[7] is regfile:inst|register_16:Areg00|q_output[7] at LCFF_X43_Y12_N23
+D1_q_output[7] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[7],  ,  , VCC);
+
+
+--F1L15 is regfile:inst|mux4_to_1:mux1|out_put[7]~232 at LCCOMB_X43_Y12_N16
+F1L15 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[7] # !Reg_wri_aa[1] & (D1_q_output[7]));
+
+
+--D4_q_output[7] is regfile:inst|register_16:Areg03|q_output[7] at LCFF_X40_Y12_N19
+D4_q_output[7] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[7],  ,  , VCC);
+
+
+--F1L16 is regfile:inst|mux4_to_1:mux1|out_put[7]~233 at LCCOMB_X42_Y12_N8
+F1L16 = Reg_wri_aa[0] & (F1L15 & (D4_q_output[7]) # !F1L15 & D2_q_output[7]) # !Reg_wri_aa[0] & F1L15;
+
+
+--D3_q_output[6] is regfile:inst|register_16:Areg02|q_output[6] at LCFF_X39_Y12_N11
+D3_q_output[6] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[6],  ,  , VCC);
+
+
+--D2_q_output[6] is regfile:inst|register_16:Areg01|q_output[6] at LCFF_X38_Y12_N15
+D2_q_output[6] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[6],  ,  , VCC);
+
+
+--D1_q_output[6] is regfile:inst|register_16:Areg00|q_output[6] at LCFF_X39_Y12_N5
+D1_q_output[6] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[6],  ,  , VCC);
+
+
+--F1L13 is regfile:inst|mux4_to_1:mux1|out_put[6]~234 at LCCOMB_X38_Y12_N14
+F1L13 = Reg_wri_aa[1] & Reg_wri_aa[0] # !Reg_wri_aa[1] & (Reg_wri_aa[0] & D2_q_output[6] # !Reg_wri_aa[0] & (D1_q_output[6]));
+
+
+--D4_q_output[6] is regfile:inst|register_16:Areg03|q_output[6] at LCFF_X40_Y12_N21
+D4_q_output[6] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[6],  ,  , VCC);
+
+
+--F1L14 is regfile:inst|mux4_to_1:mux1|out_put[6]~235 at LCCOMB_X39_Y12_N10
+F1L14 = F1L13 & (D4_q_output[6] # !Reg_wri_aa[1]) # !F1L13 & (D3_q_output[6] & Reg_wri_aa[1]);
+
+
+--D2_q_output[5] is regfile:inst|register_16:Areg01|q_output[5] at LCFF_X42_Y12_N25
+D2_q_output[5] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[5],  ,  , VCC);
+
+
+--D3_q_output[5] is regfile:inst|register_16:Areg02|q_output[5] at LCFF_X43_Y12_N13
+D3_q_output[5] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[5],  ,  , VCC);
+
+
+--D1_q_output[5] is regfile:inst|register_16:Areg00|q_output[5] at LCFF_X43_Y12_N27
+D1_q_output[5] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[5],  ,  , VCC);
+
+
+--F1L11 is regfile:inst|mux4_to_1:mux1|out_put[5]~236 at LCCOMB_X43_Y12_N12
+F1L11 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[5] # !Reg_wri_aa[1] & (D1_q_output[5]));
+
+
+--D4_q_output[5] is regfile:inst|register_16:Areg03|q_output[5] at LCFF_X40_Y12_N9
+D4_q_output[5] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[5],  ,  , VCC);
+
+
+--F1L12 is regfile:inst|mux4_to_1:mux1|out_put[5]~237 at LCCOMB_X42_Y12_N24
+F1L12 = Reg_wri_aa[0] & (F1L11 & (D4_q_output[5]) # !F1L11 & D2_q_output[5]) # !Reg_wri_aa[0] & F1L11;
+
+
+--D3_q_output[4] is regfile:inst|register_16:Areg02|q_output[4] at LCFF_X39_Y12_N13
+D3_q_output[4] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[4],  ,  , VCC);
+
+
+--D2_q_output[4] is regfile:inst|register_16:Areg01|q_output[4] at LCFF_X38_Y12_N25
+D2_q_output[4] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[4],  ,  , VCC);
+
+
+--D1_q_output[4] is regfile:inst|register_16:Areg00|q_output[4] at LCFF_X39_Y12_N31
+D1_q_output[4] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[4],  ,  , VCC);
+
+
+--F1L9 is regfile:inst|mux4_to_1:mux1|out_put[4]~238 at LCCOMB_X38_Y12_N24
+F1L9 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[4]) # !Reg_wri_aa[0] & D1_q_output[4]);
+
+
+--D4_q_output[4] is regfile:inst|register_16:Areg03|q_output[4] at LCFF_X40_Y11_N9
+D4_q_output[4] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[4],  ,  , VCC);
+
+
+--F1L10 is regfile:inst|mux4_to_1:mux1|out_put[4]~239 at LCCOMB_X39_Y12_N12
+F1L10 = Reg_wri_aa[1] & (F1L9 & D4_q_output[4] # !F1L9 & (D3_q_output[4])) # !Reg_wri_aa[1] & (F1L9);
+
+
+--D2_q_output[3] is regfile:inst|register_16:Areg01|q_output[3] at LCFF_X42_Y12_N27
+D2_q_output[3] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[3],  ,  , VCC);
+
+
+--D3_q_output[3] is regfile:inst|register_16:Areg02|q_output[3] at LCFF_X43_Y12_N9
+D3_q_output[3] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[3],  ,  , VCC);
+
+
+--D1_q_output[3] is regfile:inst|register_16:Areg00|q_output[3] at LCFF_X43_Y12_N11
+D1_q_output[3] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[3],  ,  , VCC);
+
+
+--F1L7 is regfile:inst|mux4_to_1:mux1|out_put[3]~240 at LCCOMB_X43_Y12_N8
+F1L7 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[3] # !Reg_wri_aa[1] & (D1_q_output[3]));
+
+
+--D4_q_output[3] is regfile:inst|register_16:Areg03|q_output[3] at LCFF_X42_Y12_N23
+D4_q_output[3] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[3],  ,  , VCC);
+
+
+--F1L8 is regfile:inst|mux4_to_1:mux1|out_put[3]~241 at LCCOMB_X42_Y12_N26
+F1L8 = Reg_wri_aa[0] & (F1L7 & (D4_q_output[3]) # !F1L7 & D2_q_output[3]) # !Reg_wri_aa[0] & F1L7;
+
+
+--D3_q_output[2] is regfile:inst|register_16:Areg02|q_output[2] at LCFF_X40_Y11_N21
+D3_q_output[2] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[2],  ,  , VCC);
+
+
+--D2_q_output[2] is regfile:inst|register_16:Areg01|q_output[2] at LCFF_X38_Y12_N27
+D2_q_output[2] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[2],  ,  , VCC);
+
+
+--D1_q_output[2] is regfile:inst|register_16:Areg00|q_output[2] at LCFF_X44_Y12_N29
+D1_q_output[2] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[2],  ,  , VCC);
+
+
+--F1L5 is regfile:inst|mux4_to_1:mux1|out_put[2]~242 at LCCOMB_X38_Y12_N26
+F1L5 = Reg_wri_aa[1] & Reg_wri_aa[0] # !Reg_wri_aa[1] & (Reg_wri_aa[0] & D2_q_output[2] # !Reg_wri_aa[0] & (D1_q_output[2]));
+
+
+--D4_q_output[2] is regfile:inst|register_16:Areg03|q_output[2] at LCFF_X40_Y11_N17
+D4_q_output[2] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[2],  ,  , VCC);
+
+
+--F1L6 is regfile:inst|mux4_to_1:mux1|out_put[2]~243 at LCCOMB_X40_Y11_N20
+F1L6 = Reg_wri_aa[1] & (F1L5 & (D4_q_output[2]) # !F1L5 & D3_q_output[2]) # !Reg_wri_aa[1] & F1L5;
+
+
+--D2_q_output[1] is regfile:inst|register_16:Areg01|q_output[1] at LCFF_X42_Y12_N5
+D2_q_output[1] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[1],  ,  , VCC);
+
+
+--D3_q_output[1] is regfile:inst|register_16:Areg02|q_output[1] at LCFF_X43_Y12_N15
+D3_q_output[1] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[1],  ,  , VCC);
+
+
+--D1_q_output[1] is regfile:inst|register_16:Areg00|q_output[1] at LCFF_X43_Y12_N31
+D1_q_output[1] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[1],  ,  , VCC);
+
+
+--F1L3 is regfile:inst|mux4_to_1:mux1|out_put[1]~244 at LCCOMB_X43_Y12_N14
+F1L3 = Reg_wri_aa[0] & Reg_wri_aa[1] # !Reg_wri_aa[0] & (Reg_wri_aa[1] & D3_q_output[1] # !Reg_wri_aa[1] & (D1_q_output[1]));
+
+
+--D4_q_output[1] is regfile:inst|register_16:Areg03|q_output[1] at LCFF_X42_Y12_N3
+D4_q_output[1] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[1],  ,  , VCC);
+
+
+--F1L4 is regfile:inst|mux4_to_1:mux1|out_put[1]~245 at LCCOMB_X42_Y12_N4
+F1L4 = Reg_wri_aa[0] & (F1L3 & (D4_q_output[1]) # !F1L3 & D2_q_output[1]) # !Reg_wri_aa[0] & F1L3;
+
+
+--D3_q_output[0] is regfile:inst|register_16:Areg02|q_output[0] at LCFF_X40_Y12_N27
+D3_q_output[0] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L2, H1_q_a[0],  ,  , VCC);
+
+
+--D2_q_output[0] is regfile:inst|register_16:Areg01|q_output[0] at LCFF_X42_Y12_N21
+D2_q_output[0] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L1, H1_q_a[0],  ,  , VCC);
+
+
+--D1_q_output[0] is regfile:inst|register_16:Areg00|q_output[0] at LCFF_X44_Y12_N19
+D1_q_output[0] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , D1L1, H1_q_a[0],  ,  , VCC);
+
+
+--F1L1 is regfile:inst|mux4_to_1:mux1|out_put[0]~246 at LCCOMB_X42_Y12_N20
+F1L1 = Reg_wri_aa[1] & (Reg_wri_aa[0]) # !Reg_wri_aa[1] & (Reg_wri_aa[0] & (D2_q_output[0]) # !Reg_wri_aa[0] & D1_q_output[0]);
+
+
+--D4_q_output[0] is regfile:inst|register_16:Areg03|q_output[0] at LCFF_X40_Y12_N23
+D4_q_output[0] = DFFEAS(UNCONNECTED_DATAIN, GLOBAL(A1L48), GLOBAL(A1L50),  , E1L3, H1_q_a[0],  ,  , VCC);
+
+
+--F1L2 is regfile:inst|mux4_to_1:mux1|out_put[0]~247 at LCCOMB_X40_Y12_N26
+F1L2 = Reg_wri_aa[1] & (F1L1 & (D4_q_output[0]) # !F1L1 & D3_q_output[0]) # !Reg_wri_aa[1] & F1L1;
+
+
+--F2L31 is regfile:inst|mux4_to_1:mux2|out_put[15]~216 at LCCOMB_X43_Y12_N0
+F2L31 = Reg_rd_aa[0] & Reg_rd_aa[1] # !Reg_rd_aa[0] & (Reg_rd_aa[1] & (D3_q_output[15]) # !Reg_rd_aa[1] & D1_q_output[15]);
+
+
+--F2L32 is regfile:inst|mux4_to_1:mux2|out_put[15]~217 at LCCOMB_X38_Y12_N30
+F2L32 = F2L31 & (D4_q_output[15] # !Reg_rd_aa[0]) # !F2L31 & Reg_rd_aa[0] & (D2_q_output[15]);
+
+
+--F2L29 is regfile:inst|mux4_to_1:mux2|out_put[14]~218 at LCCOMB_X39_Y12_N20
+F2L29 = Reg_rd_aa[1] & Reg_rd_aa[0] # !Reg_rd_aa[1] & (Reg_rd_aa[0] & (D2_q_output[14]) # !Reg_rd_aa[0] & D1_q_output[14]);
+
+
+--F2L30 is regfile:inst|mux4_to_1:mux2|out_put[14]~219 at LCCOMB_X38_Y12_N28
+F2L30 = Reg_rd_aa[1] & (F2L29 & D4_q_output[14] # !F2L29 & (D3_q_output[14])) # !Reg_rd_aa[1] & F2L29;
+
+
+--F2L27 is regfile:inst|mux4_to_1:mux2|out_put[13]~220 at LCCOMB_X43_Y12_N18
+F2L27 = Reg_rd_aa[0] & Reg_rd_aa[1] # !Reg_rd_aa[0] & (Reg_rd_aa[1] & (D3_q_output[13]) # !Reg_rd_aa[1] & D1_q_output[13]);
+
+
+--F2L28 is regfile:inst|mux4_to_1:mux2|out_put[13]~221 at LCCOMB_X40_Y12_N10
+F2L28 = Reg_rd_aa[0] & (F2L27 & (D4_q_output[13]) # !F2L27 & D2_q_output[13]) # !Reg_rd_aa[0] & (F2L27);
+
+
+--F2L25 is regfile:inst|mux4_to_1:mux2|out_put[12]~222 at LCCOMB_X39_Y12_N16
+F2L25 = Reg_rd_aa[1] & Reg_rd_aa[0] # !Reg_rd_aa[1] & (Reg_rd_aa[0] & (D2_q_output[12]) # !Reg_rd_aa[0] & D1_q_output[12]);
+
+
+--F2L26 is regfile:inst|mux4_to_1:mux2|out_put[12]~223 at LCCOMB_X38_Y12_N12
+F2L26 = F2L25 & (D4_q_output[12] # !Reg_rd_aa[1]) # !F2L25 & D3_q_output[12] & (Reg_rd_aa[1]);
+
+
+--F2L23 is regfile:inst|mux4_to_1:mux2|out_put[11]~224 at LCCOMB_X43_Y12_N2
+F2L23 = Reg_rd_aa[1] & (D3_q_output[11] # Reg_rd_aa[0]) # !Reg_rd_aa[1] & (D1_q_output[11] & !Reg_rd_aa[0]);
+
+
+--F2L24 is regfile:inst|mux4_to_1:mux2|out_put[11]~225 at LCCOMB_X40_Y12_N24
+F2L24 = F2L23 & (D4_q_output[11] # !Reg_rd_aa[0]) # !F2L23 & Reg_rd_aa[0] & (D2_q_output[11]);
+
+
+--F2L21 is regfile:inst|mux4_to_1:mux2|out_put[10]~226 at LCCOMB_X39_Y12_N24
+F2L21 = Reg_rd_aa[0] & (D2_q_output[10] # Reg_rd_aa[1]) # !Reg_rd_aa[0] & (D1_q_output[10] & !Reg_rd_aa[1]);
+
+
+--F2L22 is regfile:inst|mux4_to_1:mux2|out_put[10]~227 at LCCOMB_X38_Y12_N6
+F2L22 = Reg_rd_aa[1] & (F2L21 & D4_q_output[10] # !F2L21 & (D3_q_output[10])) # !Reg_rd_aa[1] & F2L21;
+
+
+--F2L19 is regfile:inst|mux4_to_1:mux2|out_put[9]~228 at LCCOMB_X43_Y12_N4
+F2L19 = Reg_rd_aa[1] & (D3_q_output[9] # Reg_rd_aa[0]) # !Reg_rd_aa[1] & (D1_q_output[9] & !Reg_rd_aa[0]);
+
+
+--F2L20 is regfile:inst|mux4_to_1:mux2|out_put[9]~229 at LCCOMB_X40_Y12_N4
+F2L20 = F2L19 & (D4_q_output[9] # !Reg_rd_aa[0]) # !F2L19 & Reg_rd_aa[0] & (D2_q_output[9]);
+
+
+--F2L17 is regfile:inst|mux4_to_1:mux2|out_put[8]~230 at LCCOMB_X39_Y12_N26
+F2L17 = Reg_rd_aa[1] & Reg_rd_aa[0] # !Reg_rd_aa[1] & (Reg_rd_aa[0] & (D2_q_output[8]) # !Reg_rd_aa[0] & D1_q_output[8]);
+
+
+--F2L18 is regfile:inst|mux4_to_1:mux2|out_put[8]~231 at LCCOMB_X40_Y12_N16
+F2L18 = Reg_rd_aa[1] & (F2L17 & D4_q_output[8] # !F2L17 & (D3_q_output[8])) # !Reg_rd_aa[1] & F2L17;
+
+
+--F2L15 is regfile:inst|mux4_to_1:mux2|out_put[7]~232 at LCCOMB_X43_Y12_N22
+F2L15 = Reg_rd_aa[1] & (D3_q_output[7] # Reg_rd_aa[0]) # !Reg_rd_aa[1] & (D1_q_output[7] & !Reg_rd_aa[0]);
+
+
+--F2L16 is regfile:inst|mux4_to_1:mux2|out_put[7]~233 at LCCOMB_X40_Y12_N18
+F2L16 = Reg_rd_aa[0] & (F2L15 & (D4_q_output[7]) # !F2L15 & D2_q_output[7]) # !Reg_rd_aa[0] & (F2L15);
+
+
+--F2L13 is regfile:inst|mux4_to_1:mux2|out_put[6]~234 at LCCOMB_X39_Y12_N4
+F2L13 = Reg_rd_aa[0] & (D2_q_output[6] # Reg_rd_aa[1]) # !Reg_rd_aa[0] & (D1_q_output[6] & !Reg_rd_aa[1]);
+
+
+--F2L14 is regfile:inst|mux4_to_1:mux2|out_put[6]~235 at LCCOMB_X40_Y12_N20
+F2L14 = Reg_rd_aa[1] & (F2L13 & D4_q_output[6] # !F2L13 & (D3_q_output[6])) # !Reg_rd_aa[1] & F2L13;
+
+
+--F2L11 is regfile:inst|mux4_to_1:mux2|out_put[5]~236 at LCCOMB_X43_Y12_N26
+F2L11 = Reg_rd_aa[0] & Reg_rd_aa[1] # !Reg_rd_aa[0] & (Reg_rd_aa[1] & (D3_q_output[5]) # !Reg_rd_aa[1] & D1_q_output[5]);
+
+
+--F2L12 is regfile:inst|mux4_to_1:mux2|out_put[5]~237 at LCCOMB_X40_Y12_N8
+F2L12 = F2L11 & (D4_q_output[5] # !Reg_rd_aa[0]) # !F2L11 & Reg_rd_aa[0] & (D2_q_output[5]);
+
+
+--F2L9 is regfile:inst|mux4_to_1:mux2|out_put[4]~238 at LCCOMB_X39_Y12_N30
+F2L9 = Reg_rd_aa[1] & (Reg_rd_aa[0]) # !Reg_rd_aa[1] & (Reg_rd_aa[0] & D2_q_output[4] # !Reg_rd_aa[0] & (D1_q_output[4]));
+
+
+--F2L10 is regfile:inst|mux4_to_1:mux2|out_put[4]~239 at LCCOMB_X40_Y11_N8
+F2L10 = F2L9 & (D4_q_output[4] # !Reg_rd_aa[1]) # !F2L9 & D3_q_output[4] & (Reg_rd_aa[1]);
+
+
+--F2L7 is regfile:inst|mux4_to_1:mux2|out_put[3]~240 at LCCOMB_X43_Y12_N10
+F2L7 = Reg_rd_aa[0] & Reg_rd_aa[1] # !Reg_rd_aa[0] & (Reg_rd_aa[1] & (D3_q_output[3]) # !Reg_rd_aa[1] & D1_q_output[3]);
+
+
+--F2L8 is regfile:inst|mux4_to_1:mux2|out_put[3]~241 at LCCOMB_X42_Y12_N22
+F2L8 = Reg_rd_aa[0] & (F2L7 & D4_q_output[3] # !F2L7 & (D2_q_output[3])) # !Reg_rd_aa[0] & F2L7;
+
+
+--F2L5 is regfile:inst|mux4_to_1:mux2|out_put[2]~242 at LCCOMB_X44_Y12_N28
+F2L5 = Reg_rd_aa[0] & (D2_q_output[2] # Reg_rd_aa[1]) # !Reg_rd_aa[0] & (D1_q_output[2] & !Reg_rd_aa[1]);
+
+
+--F2L6 is regfile:inst|mux4_to_1:mux2|out_put[2]~243 at LCCOMB_X40_Y11_N16
+F2L6 = F2L5 & (D4_q_output[2] # !Reg_rd_aa[1]) # !F2L5 & D3_q_output[2] & (Reg_rd_aa[1]);
+
+
+--F2L3 is regfile:inst|mux4_to_1:mux2|out_put[1]~244 at LCCOMB_X43_Y12_N30
+F2L3 = Reg_rd_aa[0] & Reg_rd_aa[1] # !Reg_rd_aa[0] & (Reg_rd_aa[1] & (D3_q_output[1]) # !Reg_rd_aa[1] & D1_q_output[1]);
+
+
+--F2L4 is regfile:inst|mux4_to_1:mux2|out_put[1]~245 at LCCOMB_X42_Y12_N2
+F2L4 = Reg_rd_aa[0] & (F2L3 & (D4_q_output[1]) # !F2L3 & D2_q_output[1]) # !Reg_rd_aa[0] & (F2L3);
+
+
+--F2L1 is regfile:inst|mux4_to_1:mux2|out_put[0]~246 at LCCOMB_X44_Y12_N18
+F2L1 = Reg_rd_aa[0] & (D2_q_output[0] # Reg_rd_aa[1]) # !Reg_rd_aa[0] & (D1_q_output[0] & !Reg_rd_aa[1]);
+
+
+--F2L2 is regfile:inst|mux4_to_1:mux2|out_put[0]~247 at LCCOMB_X40_Y12_N22
+F2L2 = Reg_rd_aa[1] & (F2L1 & (D4_q_output[0]) # !F2L1 & D3_q_output[0]) # !Reg_rd_aa[1] & (F2L1);
+
+
+--E1L1 is regfile:inst|decoder2_to_4:decoder|sel01~44 at LCCOMB_X38_Y12_N20
+E1L1 = !Reg_wri_aa[1] & Reg_Wri & Reg_wri_aa[0];
+
+
+--E1L2 is regfile:inst|decoder2_to_4:decoder|sel01~45 at LCCOMB_X38_Y12_N16
+E1L2 = Reg_wri_aa[1] & Reg_Wri & !Reg_wri_aa[0];
+
+
+--D1L1 is regfile:inst|register_16:Areg00|process0~0 at LCCOMB_X38_Y12_N8
+D1L1 = !Reg_wri_aa[1] & Reg_Wri & !Reg_wri_aa[0];
+
+
+--E1L3 is regfile:inst|decoder2_to_4:decoder|sel01~46 at LCCOMB_X38_Y12_N4
+E1L3 = Reg_wri_aa[1] & Reg_Wri & Reg_wri_aa[0];
+
+
+--H1_q_a[0] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[0] at M4K_X41_Y12
+--RAM Block Operation Mode: ROM
+--Port A Depth: 16, Port A Width: 16
+--Port A Logical Depth: 16, Port A Logical Width: 16
+--Port A Input: Registered, Port A Output: Un-registered
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[0] = H1_q_a[0]_PORT_A_data_out[0];
+
+--H1_q_a[8] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[8] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[8] = H1_q_a[0]_PORT_A_data_out[8];
+
+--H1_q_a[7] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[7] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[7] = H1_q_a[0]_PORT_A_data_out[7];
+
+--H1_q_a[6] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[6] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[6] = H1_q_a[0]_PORT_A_data_out[6];
+
+--H1_q_a[5] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[5] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[5] = H1_q_a[0]_PORT_A_data_out[5];
+
+--H1_q_a[4] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[4] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[4] = H1_q_a[0]_PORT_A_data_out[4];
+
+--H1_q_a[3] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[3] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[3] = H1_q_a[0]_PORT_A_data_out[3];
+
+--H1_q_a[2] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[2] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[2] = H1_q_a[0]_PORT_A_data_out[2];
+
+--H1_q_a[1] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[1] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[1] = H1_q_a[0]_PORT_A_data_out[1];
+
+--H1_q_a[15] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[15] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[15] = H1_q_a[0]_PORT_A_data_out[15];
+
+--H1_q_a[14] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[14] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[14] = H1_q_a[0]_PORT_A_data_out[14];
+
+--H1_q_a[13] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[13] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[13] = H1_q_a[0]_PORT_A_data_out[13];
+
+--H1_q_a[12] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[12] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[12] = H1_q_a[0]_PORT_A_data_out[12];
+
+--H1_q_a[11] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[11] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[11] = H1_q_a[0]_PORT_A_data_out[11];
+
+--H1_q_a[10] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[10] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[10] = H1_q_a[0]_PORT_A_data_out[10];
+
+--H1_q_a[9] is lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_nd01:auto_generated|q_a[9] at M4K_X41_Y12
+H1_q_a[0]_PORT_A_address = BUS(Rom_aa[0], Rom_aa[1], Rom_aa[2], Rom_aa[3]);
+H1_q_a[0]_PORT_A_address_reg = DFFE(H1_q_a[0]_PORT_A_address, H1_q_a[0]_clock_0, , , );
+H1_q_a[0]_clock_0 = GLOBAL(A1L48);
+H1_q_a[0]_PORT_A_data_out = MEMORY(, , H1_q_a[0]_PORT_A_address_reg, , , , , , H1_q_a[0]_clock_0, , , , , );
+H1_q_a[9] = H1_q_a[0]_PORT_A_data_out[9];
+
+
+--Reg_wri_aa[0] is Reg_wri_aa[0] at PIN_20
+--operation mode is input
+
+Reg_wri_aa[0] = INPUT();
+
+
+--Reg_wri_aa[1] is Reg_wri_aa[1] at PIN_18
+--operation mode is input
+
+Reg_wri_aa[1] = INPUT();
+
+
+--Reg_rd_aa[0] is Reg_rd_aa[0] at PIN_141
+--operation mode is input
+
+Reg_rd_aa[0] = INPUT();
+
+
+--Reg_rd_aa[1] is Reg_rd_aa[1] at PIN_140
+--operation mode is input
+
+Reg_rd_aa[1] = INPUT();
+
+
+--sw_clk is sw_clk at PIN_31
+--operation mode is input
+
+sw_clk = INPUT();
+
+
+--sw_reset is sw_reset at PIN_91
+--operation mode is input
+
+sw_reset = INPUT();
+
+
+--Reg_Wri is Reg_Wri at PIN_223
+--operation mode is input
+
+Reg_Wri = INPUT();
+
+
+--Rom_aa[0] is Rom_aa[0] at PIN_14
+--operation mode is input
+
+Rom_aa[0] = INPUT();
+
+
+--Rom_aa[1] is Rom_aa[1] at PIN_13
+--operation mode is input
+
+Rom_aa[1] = INPUT();
+
+
+--Rom_aa[2] is Rom_aa[2] at PIN_136
+--operation mode is input
+
+Rom_aa[2] = INPUT();
+
+
+--Rom_aa[3] is Rom_aa[3] at PIN_139
+--operation mode is input
+
+Rom_aa[3] = INPUT();
+
+
+--DR_out[15] is DR_out[15] at PIN_200
+--operation mode is output
+
+DR_out[15] = OUTPUT(F1L32);
+
+
+--DR_out[14] is DR_out[14] at PIN_197
+--operation mode is output
+
+DR_out[14] = OUTPUT(F1L30);
+
+
+--DR_out[13] is DR_out[13] at PIN_194
+--operation mode is output
+
+DR_out[13] = OUTPUT(F1L28);
+
+
+--DR_out[12] is DR_out[12] at PIN_191
+--operation mode is output
+
+DR_out[12] = OUTPUT(F1L26);
+
+
+--DR_out[11] is DR_out[11] at PIN_188
+--operation mode is output
+
+DR_out[11] = OUTPUT(F1L24);
+
+
+--DR_out[10] is DR_out[10] at PIN_186
+--operation mode is output
+
+DR_out[10] = OUTPUT(F1L22);
+
+
+--DR_out[9] is DR_out[9] at PIN_184
+--operation mode is output
+
+DR_out[9] = OUTPUT(F1L20);
+
+
+--DR_out[8] is DR_out[8] at PIN_177
+--operation mode is output
+
+DR_out[8] = OUTPUT(F1L18);
+
+
+--DR_out[7] is DR_out[7] at PIN_174
+--operation mode is output
+
+DR_out[7] = OUTPUT(F1L16);
+
+
+--DR_out[6] is DR_out[6] at PIN_171
+--operation mode is output
+
+DR_out[6] = OUTPUT(F1L14);
+
+
+--DR_out[5] is DR_out[5] at PIN_168
+--operation mode is output
+
+DR_out[5] = OUTPUT(F1L12);
+
+
+--DR_out[4] is DR_out[4] at PIN_166
+--operation mode is output
+
+DR_out[4] = OUTPUT(F1L10);
+
+
+--DR_out[3] is DR_out[3] at PIN_165
+--operation mode is output
+
+DR_out[3] = OUTPUT(F1L8);
+
+
+--DR_out[2] is DR_out[2] at PIN_164
+--operation mode is output
+
+DR_out[2] = OUTPUT(F1L6);
+
+
+--DR_out[1] is DR_out[1] at PIN_162
+--operation mode is output
+
+DR_out[1] = OUTPUT(F1L4);
+
+
+--DR_out[0] is DR_out[0] at PIN_161
+--operation mode is output
+
+DR_out[0] = OUTPUT(F1L2);
+
+
+--SR_out[15] is SR_out[15] at PIN_38
+--operation mode is output
+
+SR_out[15] = OUTPUT(F2L32);
+
+
+--SR_out[14] is SR_out[14] at PIN_39
+--operation mode is output
+
+SR_out[14] = OUTPUT(F2L30);
+
+
+--SR_out[13] is SR_out[13] at PIN_41
+--operation mode is output
+
+SR_out[13] = OUTPUT(F2L28);
+
+
+--SR_out[12] is SR_out[12] at PIN_42
+--operation mode is output
+
+SR_out[12] = OUTPUT(F2L26);
+
+
+--SR_out[11] is SR_out[11] at PIN_44
+--operation mode is output
+
+SR_out[11] = OUTPUT(F2L24);
+
+
+--SR_out[10] is SR_out[10] at PIN_46
+--operation mode is output
+
+SR_out[10] = OUTPUT(F2L22);
+
+
+--SR_out[9] is SR_out[9] at PIN_47
+--operation mode is output
+
+SR_out[9] = OUTPUT(F2L20);
+
+
+--SR_out[8] is SR_out[8] at PIN_49
+--operation mode is output
+
+SR_out[8] = OUTPUT(F2L18);
+
+
+--SR_out[7] is SR_out[7] at PIN_50
+--operation mode is output
+
+SR_out[7] = OUTPUT(F2L16);
+
+
+--SR_out[6] is SR_out[6] at PIN_51
+--operation mode is output
+
+SR_out[6] = OUTPUT(F2L14);
+
+
+--SR_out[5] is SR_out[5] at PIN_52
+--operation mode is output
+
+SR_out[5] = OUTPUT(F2L12);
+
+
+--SR_out[4] is SR_out[4] at PIN_54
+--operation mode is output
+
+SR_out[4] = OUTPUT(F2L10);
+
+
+--SR_out[3] is SR_out[3] at PIN_55
+--operation mode is output
+
+SR_out[3] = OUTPUT(F2L8);
+
+
+--SR_out[2] is SR_out[2] at PIN_56
+--operation mode is output
+
+SR_out[2] = OUTPUT(F2L6);
+
+
+--SR_out[1] is SR_out[1] at PIN_57
+--operation mode is output
+
+SR_out[1] = OUTPUT(F2L4);
+
+
+--SR_out[0] is SR_out[0] at PIN_58
+--operation mode is output
+
+SR_out[0] = OUTPUT(F2L2);
+
+
+
+
+
+--A1L48 is sw_clk~clkctrl at CLKCTRL_G2
+A1L48 = cycloneii_clkctrl(.INCLK[0] = sw_clk) WITH (clock_type = "Global Clock");
+
+
+--A1L50 is sw_reset~clkctrl at CLKCTRL_G15
+A1L50 = cycloneii_clkctrl(.INCLK[0] = sw_reset) WITH (clock_type = "Global Clock");
+
+

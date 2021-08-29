@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Mon Nov 16 20:13:19 2020
+Quartus II Version : 5.1 Build 176 10/26/2005 SJ Full Version
+Revision Name : REG
+Top-level Entity Name : REG
+Family : Cyclone II
+Total combinational functions : 68
+Total registers : 64
+Total pins : 43
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
